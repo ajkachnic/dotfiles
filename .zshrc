@@ -72,8 +72,8 @@ eval $cmd
 unset QT_QPA_PLATFORMTHEME 
 
 # fnm
-export PATH=/home/andrew/.fnm:$PATH
-eval "`fnm env --multi`"
+#export PATH=/home/andrew/.fnm:$PATH
+#eval "`fnm env --multi`"
 
 # fzf config
 if type rg &> /dev/null; then
@@ -86,3 +86,6 @@ export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 
 # zoxide
 eval "$(zoxide init zsh)"
+# volta!
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
