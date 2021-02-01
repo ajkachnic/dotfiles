@@ -1,0 +1,6 @@
+[user]
+	email = ajkachnic@protonmail.com
+	name = Andrew Kachnic
+	signingkey = A6A8DA5501F52C6F
+[commit]
+	gpgsign = true
