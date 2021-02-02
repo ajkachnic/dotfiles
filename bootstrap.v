@@ -89,7 +89,12 @@ fn prompt_to_install(program Program) bool {
   return prompt("[?] Install $program.name?")
 }
 
-fn main() {
+fn main()  {
+  // Can't detect current user name for some reason
+  if os.home_dir() == '/root' {
+    eprintln("Please don't run me as root")
+    exit(1)
+  }
   mut cmd := Command{
     name: 'bootstraper'
     description: 'A simple CLI to bootstrap personal config'
